@@ -6,6 +6,7 @@ import Register from "./pages/register/Register";
 import Setting from "./pages/settings/Setting";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
+import About from "./pages/about/About";
 
 import {
   BrowserRouter as Router,
@@ -27,6 +28,7 @@ const {user} = useContext(Context);
       <Route path="/write" >{user ? <Write/> : <Register/>}</Route>
       <Route path="/settings" >{user ? <Setting/> : <Register/>}</Route>
       <Route path="/post/:postId" ><Single/></Route>
+      <Route path="/about" ><About /></Route>
     </Switch>
     </Router>
   );

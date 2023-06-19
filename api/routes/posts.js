@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const Post = require("../models/Post");
+const User = require("../models/User");
 
 // CREATE POST
 router.post("/", async (req, res) => {
@@ -42,7 +43,7 @@ router.delete("/:id", async (req, res) => {
         if (post.username === req.body.username){
 
             try {
-                await post.delete();
+                await post.deleteOne();
                 res.status(200).json("Post has been deleted...");
             } catch (err) {
                 res.status(500).json(err);
@@ -59,7 +60,7 @@ router.delete("/:id", async (req, res) => {
 router.get("/:id", async (req, res) => {
     try {
         const post = await Post.findById(req.params.id);
-        res.status(200).json(others);
+        res.status(200).json(post);
     } catch (err) {
         res.status(500).json(err);
     }

@@ -64,7 +64,7 @@
 }
 
 .settingsForm > input{
-    color: ghostwhite;
+    color: rgb(24, 24, 36);
     margin-left: 10px 0px;
     border: none;
     height: 30px;
@@ -81,4 +81,10 @@
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.settingsSuccess{
+    color: rgb(37, 95, 37);
+    text-align: center;
+    margin: 20px;
 }

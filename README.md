@@ -25,7 +25,7 @@ Blogite Blog is a full-stack web application that allows users to read and write
 
 To get started with Blogite Blog, follow these steps:
 
-1. Clone the repository: `git clone [https://github.com/DivyanshiRawat66/blog-website.git](https://github.com/DivyanshiRawat66/blog-website.git)`
+1. Clone the repository: `git clone https://github.com/DivyanshiRawat66/blog-website.git`
 2. Install dependencies: `npm install`
 3. Configure the MongoDB connection in the server configuration file.
 4. Start the development server: `npm start`
